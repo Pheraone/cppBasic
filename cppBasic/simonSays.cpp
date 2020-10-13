@@ -1,19 +1,17 @@
-// cppBasic.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+//include libraries
 #include <iostream>
 #include <stdlib.h>
-
+#include <list>
+#include <time.h>
+//include files
 #include "simonSays.h"
 
 void SimonSays::askStartQuestions() {
 
 	//TODO: tweak this so it will take one char instead of more and check them in one round...
-
-
 	char input;
 
-	std::cout << "Start the game?" << std::endl;
+	std::cout << "\n Start the game?" << std::endl;
 	std::cout << "y/n?" << std::endl;
 
 	std::cin >> input;
@@ -40,18 +38,42 @@ void SimonSays::startGame() {
 
 	std::cout << "starting game\n";
 	clearScreen();
+	returnSimonsSequence();
+
 }
 
-//TODO: Find good solution.
+//we need a function that waits before clearing the screen.
+
+
 void SimonSays::clearScreen()
 {
-	int n;
-	for (n = 0; n < 10; n++)
-	std::cout << "\n\n\n\n\n\n\n\n\n\n";
+	//Zoek naar een manier om het scherm leeg te maken -> (deze is alleen niet cross platform)
+	system("cls");
 }
 
-void SimonSays::returnRandomNumbers() {
+void SimonSays::returnSimonsSequence() {
 
-	std::cout << "OH LALALALA\n";
+	srand(time(NULL));
+	
+	std::list<int> simonsSequence = { rand() % 10, rand() % 10, rand() % 10 };
+	for (auto v : simonsSequence) {
+		std::cout << v;
+	}
+
+	//here we need to add an extra number to the sequence for every correct round
+
+	//for testing
+	//askStartQuestions();
 }
+
+//inputCheck
+//check the input against the sequence
+void SimonSays::checkInput() {
+	//for input == sequence
+	//
+	//if input == sequence 
+	
+	
+}
+
 

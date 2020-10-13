@@ -6,5 +6,6 @@ public:
 	void askStartQuestions();
 	void startGame();
 	void clearScreen();
-	void returnRandomNumbers();
+	void returnSimonsSequence();
+	void checkInput();
 };
