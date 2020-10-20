@@ -1,5 +1,14 @@
-
 #include "simonSays.h" ;
+
+#include <iostream>
+#include <stdlib.h>
+#include <list>
+#include <time.h>
+#include <iterator>
+#include <chrono>
+#include <thread>
+
+
 
 /*		Opdracht SimonSays
 		Toon een reeks van 3 random getallen
@@ -13,23 +22,7 @@
 
 int main()
 {
-
 	SimonSays simonSays = SimonSays();
-	//start questions
-	simonSays.askStartQuestions();
-
-	
-
-
-
-	
-
-	//TODO: show list/array of numbers
-	//wait for input
-	//check input
-	//
-
-	
 
 	return 0;
 }

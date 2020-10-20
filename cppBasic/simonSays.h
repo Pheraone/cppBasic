@@ -1,11 +1,13 @@
 #pragma once
-
+#include<list>
 class SimonSays {
 public:
-	bool hasStarted;
-	void askStartQuestions();
+	std::list<int> simonsSequence;
+	SimonSays();
+	
 	void startGame();
 	void clearScreen();
 	void returnSimonsSequence();
-	void checkInput();
+	void iSleep();
+	void addNumber();
 };
