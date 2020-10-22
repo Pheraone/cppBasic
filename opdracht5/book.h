@@ -4,10 +4,15 @@
 
 class book
 {
-private:
+	private:
+		std::string title;
+		std::string author;
 
-public:
-	std::string state;
+	public:
+		book();
+		std::string getTitle();
+		std::string getAuthor();
+		~book();
 
 };
 
