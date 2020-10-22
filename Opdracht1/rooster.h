@@ -9,7 +9,7 @@ class Rooster
 	public:	
 		void geefRoosterWeer() {
 			//laat rooster zien
-		std::cout << "rooster wordt weergegeven";
+			std::cout << "rooster wordt weergegeven";
 
 		}
 };
