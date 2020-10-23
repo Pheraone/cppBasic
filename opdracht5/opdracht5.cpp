@@ -1,7 +1,6 @@
 // opdracht5.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 #include"library.h"
-
 #include <iostream>
 
 //Maak een tragische bibliotheek : een bibliotheek met maar 1 boek.
